@@ -14,35 +14,38 @@
   <body>
     <div class="main-container">
       <div class="calculator-container">
-        <div class="display-container">
-          <input type="text" id="display" class="display">
-        </div>
-        <div class="button-container">
-          <div>
-            <input type="button" id="calc-btn" class="calc-btn " name="7" value="7">7</input>
-            <input type="button" id="calc-btn" class="calc-btn " name="8" value="8">8</input>
-            <input type="button" id="calc-btn" class="calc-btn " name="9" value="9">9</input>
-            <input type="button" id="calc-btn" class="calc-btn " name="divide" value="">/</input>
-            <input type="button" id="calc-btn" class="calc-btn " name="clear" value="">C</input></div>
-          <div>
-            <input type="button" id="calc-btn" class="calc-btn " name="4" value="4">4</input>
-            <input type="button" id="calc-btn" class="calc-btn " name="5" value="5">5</input>
-            <input type="button" id="calc-btn" class="calc-btn " name="6" value="6">6</input>
-            <input type="button" id="calc-btn" class="calc-btn " name="multiply" value="">X</input></div>
-          <div>
-            <input type="button" id="calc-btn" class="calc-btn " name="1" value="1">1</input>
-            <input type="button" id="calc-btn" class="calc-btn " name="2" value="2">2</input>
-            <input type="button" id="calc-btn" class="calc-btn " name="3" value="3">3</input>
-            <input type="button" id="calc-btn" class="calc-btn " name="rest" value="">-</input>
+        <form action="" name="calculator">
+          <div class="display-container">
+            <input type="text" id="display" class="display" placeholder="0">
           </div>
-          <div>
-            <input type="button" id="calc-btn" class="calc-btn " name="0" value="0">0</input>
-            <input type="button" id="calc-btn" class="calc-btn " name="dot" value="">.</input>
-            <input type="button" id="calc-btn" class="calc-btn " name="percentage" value="">%</input>
-            <input type="button" id="calc-btn" class="calc-btn " name="plus" value="">+</input>
-            <input type="button" id="calc-btn" class="calc-btn " name="equal" value="">=</input>
+          <div class="button-container" id="btn-container">
+            <div>
+              <input type="button" id="7" class="calc-btn " name="7" value="7"></input>
+              <input type="button" id="8" class="calc-btn " name="8" value="8"></input>
+              <input type="button" id="9" class="calc-btn " name="9" value="9"></input>
+              <input type="button" id="divide" class="calc-btn " name="divide" value="/"></input>
+              <input type="button" id="clear" class="calc-btn " name="clear" value="C"></input>
+            </div>
+            <div>
+              <input type="button" id="4" class="calc-btn " name="4" value="4"></input>
+              <input type="button" id="5" class="calc-btn " name="5" value="5"></input>
+              <input type="button" id="6" class="calc-btn " name="6" value="6"></input>
+              <input type="button" id="multiply" class="calc-btn " name="multiply" value="*"></input></div>
+            <div>
+              <input type="button" id="1" class="calc-btn " name="1" value="1"></input>
+              <input type="button" id="2" class="calc-btn " name="2" value="2"></input>
+              <input type="button" id="3" class="calc-btn " name="3" value="3"></input>
+              <input type="button" id="minus" class="calc-btn " name="rest" value="-"></input>
+            </div>
+            <div>
+              <input type="button" id="0" class="calc-btn " name="0" value="0"></input>
+              <input type="button" id="dot" class="calc-btn " name="dot" value="."></input>
+              <input type="button" id="percentage" class="calc-btn " name="percentage" value="%"></input>
+              <input type="button" id="plus" class="calc-btn " name="plus" value="+"></input>
+              <input type="button" id="equal" class="calc-btn " name="equal" value="="></input>
+            </div>
           </div>
-        </div>
+        </form>
       </div>
     </div>
     
