@@ -59,6 +59,29 @@ sumButton.addEventListener('click', e => {
     output.innerHTML = '';
 });
 
+restButton.addEventListener('click', e => {
+    operator = '-';
+    operandA = accumulator;
+    accumulator = 0;
+    output.innerHTML = '';
+});
+
+multiplyButton.addEventListener('click', e => {
+    operator = '*';
+    operandA = accumulator;
+    accumulator = 0;
+    //console.log(operandA);
+    output.innerHTML = '';
+});
+
+divideButton.addEventListener('click', e => {
+    operator = '/';
+    operandA = accumulator;
+    accumulator = 0;
+    //console.log(operandA);
+    output.innerHTML = '';
+});
+
 equalButton.addEventListener('click', equalTo);
 
 const clearButton = document.getElementById('clear');
