@@ -47,6 +47,8 @@ function operation(operandA, operator, operandB) {
 const allNumberBtns = document.querySelectorAll('.number');
 const sumButton = document.getElementById('sum');
 const restButton = document.getElementById('rest');
+const multiplyButton = document.getElementById('multiply');
+const divideButton = document.getElementById('divide');
 const equalButton = document.getElementById('equal')
 
 sumButton.addEventListener('click', e => {
