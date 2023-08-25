@@ -193,6 +193,11 @@ function numPad(event) {
     }
 }
 
+function operationPad (event) {
+    console.log(event.key);
+}
 
 
-window.addEventListener('keyup', numPad);
+
+window.addEventListener('keyup', numPad); // this is how you add an evenlistener to a key event
+window.addEventListener('keyup', operationPad);
