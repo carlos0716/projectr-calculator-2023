@@ -29,6 +29,12 @@ function percentage(a, b) {
     return a * percentage;
 }
 
+function potence(a, b) {
+    let result = (a ** b).toFixed(4);
+    return Number(result);
+}
+
+
 let operandA;
 let operandB;
 let operator;
@@ -51,6 +57,9 @@ function operation(operandA, operator, operandB) {
  } else if (operator === '%') {
     let result = percentage(operandA, operandB);
     return result;
+ } else if (operator === '**') {
+    let result = potence(operandA, operandB);
+    return result;
  }
 }
 
@@ -63,6 +72,7 @@ const equalButton = document.getElementById('equal');
 const percentageButton = document.getElementById('percentage')
 const dotButton = document.getElementById('dot');
 const backspaceButton = document.getElementById('backspace');
+const squareButton = document.getElementById('square');
 // sumButton.addEventListener('click', e => {
 //     operator = '+';
 //     operandA = accumulator;
@@ -72,16 +82,11 @@ const backspaceButton = document.getElementById('backspace');
 // });
 
 sumButton.addEventListener('click', e => {
-    operandA = accumulator;
-    if((accumulator !== 0)) {
-        console.log('ok');
-    } else {
-        operator = '+';
+    operator = '+';
     operandA = accumulator;
     accumulator = 0;
-    //console.log(operandA);
     output.innerHTML = '';
-    }
+    clickCounter = 0;
 })
 
 restButton.addEventListener('click', e => {
@@ -118,6 +123,16 @@ percentageButton.addEventListener('click', e => {
     output.innerHTML = '';
     clickCounter = 0;
 });
+
+squareButton.addEventListener('click', e => {
+    operator = '**';
+    operandA = accumulator;
+    accumulator = 0;
+    //console.log(operandA);
+    output.innerHTML = '';
+    clickCounter = 0;
+
+})
 
 
 
