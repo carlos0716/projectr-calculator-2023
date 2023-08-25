@@ -16,7 +16,9 @@
   --clr-accent-400: hsl(144, 42%, 39%);
   --clr-accent-100: hsl(97, 73%, 75%);
 
+  --clr-primary-200: hsl(150, 66%, 40%);
   --clr-primary-400: hsl(203, 75%, 50%);
+  --clr-primary-600: hsl(221, 91%, 50%);
 
   --clr-neutral-100: hwb(12 95% 4%);
   --clr-neutral-900: hsl(0, 0%, 14%);
@@ -118,18 +120,19 @@ select {
 
 .main-container {
   display: flex;
-  height: 200px;
+  height: auto;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   margin: 5em;
+  color: var(--clr-neutral-100);
 }
 
 .calculator-container {
   display: flex;
   flex-direction: column;
-  width: 292px;
-  height: 238px;
+  width: 392px;
+  height: 438px;
   background-color: var(--clr-accent-400);
   align-items: center;
   justify-content: center;
@@ -159,12 +162,37 @@ select {
 
   padding: 0.25em 0.75em;
   font-size: 100%;
-  width: 40px;
-  height: 30px;
+  width: 60px;
+  height: 40px;
   text-align: justify;
   border-radius: 5%;
   color: var(--clr-accent-100);
-  background-color: var(--clr-primary-400);
+  background-color: var(--clr-primary-600);
+}
+
+.calc-btn:hover {
+  color: blueviolet;
+  background-color: var(--clr-primary-200);
+}
+
+.operation {
+  background-color: var(--clr-primary-200);;
+  color: var(--clr-neutral-100);
+}
+
+.operation:hover {
+  background-color: var(--clr-primary-600);
+
+}
+
+#output {
+  width: 10ch;
+  height: 2em;
+  overflow: hidden;
+  white-space: nowrap;
+  background-color: var(--clr-neutral-100);
+  border: 1px solid red;
+  color: rgb(241, 44, 44);
 }
 
 /* .button-container {
