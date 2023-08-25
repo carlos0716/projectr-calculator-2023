@@ -14,41 +14,42 @@
   <body>
     <div class="main-container">
       <div class="calculator-container">
-        <form action="" name="calculator">
+        
           <div class="display-container">
             <!-- <input type="text" id="output" class="display" placeholder="0" minlength="0" maxlength="10"> -->
             <p id="output" class="output"></p>
           </div>
           <div class="button-container" id="btn-container">
-            <div>
+            <div class="first-row">
               <input type="button" id="seven" class="calc-btn number" name="7" value="7"></input>
               <input type="button" id="eight" class="calc-btn number" name="8" value="8"></input>
               <input type="button" id="9" class="calc-btn number" name="9" value="9"></input>
-              <input type="button" id="divide" class="calc-btn operation" name="divide" value="/"></input>
-              <input type="button" id="clear" class="calc-btn operation" name="clear" value="C"></input>
+              <input type="button" id="divide" class="calc-btn operation " name="divide" value="/"></input>
+              <input type="button" id="clear" class="calc-btn operation red-btn" name="clear" value="C"></input>
             </div>
-            <div>
+            <div class="second-row">
               <input type="button" id="four" class="calc-btn number" name="4" value="4"></input>
               <input type="button" id="five" class="calc-btn number" name="5" value="5"></input>
               <input type="button" id="six" class="calc-btn number" name="6" value="6"></input>
               <input type="button" id="multiply" class="calc-btn operation" name="multiply" value="*"></input>
-              <input type="button" id="backspace" class="calc-btn operation" name="backspace" value="bs"></input>
+              <input type="button" id="backspace" class="calc-btn operation red-btn" name="backspace" value="DEL"></input>
             </div>
-            <div>
+            <div class="third-row">
               <input type="button" id="one" class="calc-btn number" name="1" value="1"></input>
               <input type="button" id="two" class="calc-btn number" name="2" value="2"></input>
               <input type="button" id="three" class="calc-btn number" name="3" value="3"></input>
               <input type="button" id="rest" class="calc-btn operation" name="rest" value="-"></input>
+              <input type="button" id="square" class="calc-btn operation" name="square" value="^"></input>
             </div>
-            <div>
-              <input type="button" id="0" class="calc-btn number" name="0" value="0"></input>
+            <div class="fourth-row">
               <input type="button" id="dot" class="calc-btn " name="dot" value="."></input>
+              <input type="button" id="0" class="calc-btn number" name="0" value="0"></input>
               <input type="button" id="percentage" class="calc-btn " name="percentage" value="%"></input>
               <input type="button" id="sum" class="calc-btn operation" name="plus" value="+"></input>
               <input type="button" id="equal" class="calc-btn operation" name="equal" value="="></input>
             </div>
           </div>
-        </form>
+        
       </div>
     </div>
     
