@@ -13,12 +13,12 @@
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%; */
 
-  --clr-accent-400: hsl(144, 42%, 39%);
+  --clr-accent-400: hsl(240, 1%, 28%);
   --clr-accent-100: hsl(97, 73%, 75%);
 
-  --clr-primary-200: hsl(150, 66%, 40%);
+  --clr-primary-200: hsl(156, 2%, 49%);
   --clr-primary-400: hsl(203, 75%, 50%);
-  --clr-primary-600: hsl(221, 91%, 50%);
+  --clr-primary-600: hsl(228, 3%, 72%);
 
   --clr-neutral-100: hwb(12 95% 4%);
   --clr-neutral-900: hsl(0, 0%, 14%);
@@ -138,15 +138,19 @@ select {
   justify-content: center;
   margin: auto;
   border: solid 2px var(--clr-neutral-900);
+  border-radius: 12%;
 }
 
 .display-container {
   display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 10px;
+  align-items: flex-end;
+  justify-content: flex-end;
+  background-color: white;
+  /* padding: 10px;
   margin-top: 15px;
-  margin-bottom: 15px;
+  margin-bottom: 15px; */
+  width: 320.33px;
+  
 }
 
 .button-container {
@@ -165,13 +169,13 @@ select {
   width: 60px;
   height: 40px;
   text-align: justify;
-  border-radius: 5%;
-  color: var(--clr-accent-100);
+  border-radius: 15%;
+  color: var(--clr-neutral-900);
   background-color: var(--clr-primary-600);
 }
 
 .calc-btn:hover {
-  color: blueviolet;
+  color: var(--clr-neutral-100);
   background-color: var(--clr-primary-200);
 }
 
@@ -182,17 +186,24 @@ select {
 
 .operation:hover {
   background-color: var(--clr-primary-600);
-
+color: var(--clr-neutral-900);
 }
+
+
 
 #output {
   width: 10ch;
   height: 2em;
   overflow: hidden;
   white-space: nowrap;
-  background-color: var(--clr-neutral-100);
-  border: 1px solid red;
-  color: rgb(241, 44, 44);
+  background-color: white;
+  color: rgb(54, 53, 53);
+  font-size: var(--fs-700);
+}
+
+.red-btn {
+  background-color: red;
+  color: white;
 }
 
 /* .button-container {
