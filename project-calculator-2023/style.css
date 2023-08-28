@@ -3,16 +3,6 @@
   line-height: 1.5;
   font-weight: 400;
 
-  /* color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424; */
-
-  /* font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-text-size-adjust: 100%; */
-
   --clr-accent-400: hsl(240, 1%, 28%);
   --clr-accent-100: hsl(97, 73%, 75%);
 
@@ -80,6 +70,7 @@ body {
   min-height: 100vh;
   text-rendering: optimizeSpeed;
   line-height: 1.5;
+  background-color: var(--clr-accent-100);
 }
 
 /* A elements that don't have a class get default styles */
@@ -189,8 +180,6 @@ select {
 color: var(--clr-neutral-900);
 }
 
-
-
 #output {
   width: 10ch;
   height: 2em;
@@ -199,6 +188,7 @@ color: var(--clr-neutral-900);
   background-color: white;
   color: rgb(54, 53, 53);
   font-size: var(--fs-700);
+  font-weight: var(--fw-semi-bold);
 }
 
 .red-btn {
@@ -206,9 +196,8 @@ color: var(--clr-neutral-900);
   color: white;
 }
 
-/* .button-container {
-  display: flex;
-  align-items: flex-start;
-  justify-content: flex-start;
-  flex-direction: column;
-} */
+.header {
+  background-color: var(--clr-accent-100);
+  color: var(--clr-primary-400);
+}
+
