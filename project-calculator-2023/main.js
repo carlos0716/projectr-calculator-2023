@@ -246,9 +246,28 @@ function equalPad(e) {
     }
 }
 
-window.addEventListener('keyup', numPad); // this is how you add an evenlistener to a key event
+function clearKeyboard(e) {
+    if (e.key === 'Escape') {
+        output.innerHTML = '';
+        operandA = undefined;
+        operandB = undefined;
+        operator = undefined;
+        accumulator = undefined;
+        clickCounter = 0;        
+    }
+}
+
+function deleteKeyboard(e) {
+    if (e.key === 'Backspace') {
+        output.innerHTML = output.innerHTML.slice(0, output.innerHTML.length -1);  
+    }
+}
+
+window.addEventListener('keydown', numPad); // this is how you add an evenlistener to a key event
 window.addEventListener('keydown', sumPad);
 window.addEventListener('keydown', restPad);
 window.addEventListener('keydown', multiplyPad);
 window.addEventListener('keydown', divisionPad);
 window.addEventListener('keydown', equalPad);
+window.addEventListener('keydown', clearKeyboard);
+window.addEventListener('keydown', deleteKeyboard);
