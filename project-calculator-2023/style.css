@@ -196,6 +196,11 @@ color: var(--clr-neutral-900);
   color: white;
 }
 
+.red-btn:hover {
+  background-color: white;
+  color: red;
+}
+
 .header {
   background-color: var(--clr-accent-100);
   color: var(--clr-primary-400);
